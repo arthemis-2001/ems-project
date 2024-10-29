@@ -325,6 +325,7 @@
       </div>
     </div>
 
+    <!-- Add Employee Modal -->
     <div
       class="modal fade"
       id="add_employee"
@@ -435,6 +436,241 @@
                 </div>
               </div>
             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Employee Details Modal -->
+    <div
+      class="modal fade"
+      id="employee_detail"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+      style="backdrop-filter: blur(5px)"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Employee Details</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <table class="table table-bordered small mb-0">
+              <tr>
+                <th class="w-50">ID</th>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th>Employee ID</th>
+                <td>542</td>
+              </tr>
+              <tr>
+                <th>First Name</th>
+                <td>Artem</td>
+              </tr>
+              <tr>
+                <th>Last Name</th>
+                <td>Tartakovsky</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>artem.tartakovskiy@gmail.com</td>
+              </tr>
+              <tr>
+                <th>Phone</th>
+                <td>+1820749163</td>
+              </tr>
+              <tr>
+                <th>Joining Date</th>
+                <td>29th October 2024</td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <a
+              href="#"
+              class="btn btn-sm btn-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#employee_edit"
+              >Edit Details</a
+            >
+            <a
+              href="#"
+              class="btn btn-sm btn-primary"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              >Close</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Employee Modal -->
+    <div
+      class="modal fade"
+      id="employee_edit"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+      style="backdrop-filter: blur(5px)"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-bg-dark">
+            <h5 class="modal-title">Edit Employee Details</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="container">
+                <div class="row gx-3">
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <input
+                        type="date"
+                        class="form-control form-control-sm"
+                        value="2024-10-29"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="First Name"
+                        value="Artem"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input
+                        type="text"
+                        class="form-control form-control-sm"
+                        placeholder="Last Name"
+                        value="Tartakovsky"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input
+                        type="email"
+                        class="form-control form-control-sm"
+                        placeholder="Email"
+                        value="artem.tartakovskiy@gmail.com"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <input
+                        type="tel"
+                        class="form-control form-control-sm"
+                        placeholder="Phone"
+                        value="+1820749163"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="mb-3">
+                      <select
+                        class="form-select form-select-sm"
+                        aria-label="Job Assigned"
+                      >
+                        <option>Select job for Employee</option>
+                        <option selected value="C++ Developer">
+                          C++ Developer
+                        </option>
+                        <option value="Java Developer">Java Developer</option>
+                        <option value="Full-Stack Python Developer">
+                          Full-stack Python Developer
+                        </option>
+                        <option value="HR Recruiter">HR Recruiter</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="d-grid">
+                      <button type="submit" class="btn btn-sm btn-warning">
+                        Update Employee
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="d-grid">
+                      <button
+                        type="button"
+                        class="btn btn-sm btn-success"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Employee Details Modal -->
+    <div
+      class="modal fade"
+      id="employee_delete"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      aria-hidden="true"
+      style="backdrop-filter: blur(5px)"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-body text-center d-flex justify-content-between align-items-center"
+          >
+            <h4 class="fw-light m-0">
+              Do you want to delete <strong><q>Artem Tartakovsky</q></strong
+              >?
+            </h4>
+            <button
+              type="button"
+              class="btn-close ms-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="submit" class="btn btn-sm btn-danger">YES</button>
+            <button
+              type="button"
+              class="btn btn-sm btn-warning"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Nope, go back
+            </button>
           </div>
         </div>
       </div>
